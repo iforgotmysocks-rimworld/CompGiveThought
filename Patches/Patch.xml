@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!--<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName=""]/comps</xpath>
-		<value>
-		</value>
-	</Operation>-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Bed"]/comps</xpath>
+    <value>
+      <li Class="CompGiveThought.CompProperties_GiveThought">
+        <thoughtDef>FuzzyFeelz</thoughtDef>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Bed"]</xpath>
+    <value>
+      <tickerType>Rare</tickerType>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Apparel_BasicShirt"]</xpath>
+    <value>
+      <tickerType>Normal</tickerType>
+      <comps>
+        <li Class="CompGiveThought.CompProperties_GiveThought">
+          <!-- the def of the thought you can feely create and apply, see Defs\ExampleThought.xml -->
+          <thoughtDef>FuzzyFeelz</thoughtDef>
+          <!-- if the apperel isn't worn, which would apply the thought to the wearer, every pawn in a 2 cell radius receives the thought, 0 by default which disables the aoe application -->
+          <radius>2</radius>
+          <!-- when enabled, a pawn would receive the thought when also having the item in his inventory without having it euipped as apparel, weapon or equipment, false by default -->
+          <enableInInventory>false</enableInInventory>
+        </li>
+      </comps>
+    </value>
+  </Operation>
 
 </Patch>

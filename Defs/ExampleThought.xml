@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <ThoughtDef>
+    <defName>FuzzyFeelz</defName>
+    <durationDays>0.05</durationDays>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Fuzzy Feeeeeeelz</label>
+        <description>Soo fuzzy</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

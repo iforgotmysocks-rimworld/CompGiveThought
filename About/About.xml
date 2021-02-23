@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>TemplateMod</name>
+	<name>CompGiveThought</name>
 	<author>iforgotmysocks</author>
 	<url></url>
   <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
     <li>1.2</li>
   </supportedVersions>
-  <packageId>iforgotmysocks.templatemod</packageId>
+  <packageId>iforgotmysocks.CompGiveThought</packageId>
 	<description>
-  
-	</description>
+    Simple comp that can be assigned to new ThingDefs or added to existing ones, which takes a thought and some configuration as parameters.
+    Examples can be found in Patches\Patch.xml. An example thought can be found in Defs\ExampleThought.xml
+  </description>
 </ModMetaData>
